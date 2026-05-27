@@ -77,8 +77,6 @@ python manage.py runserver
 
 Backend will run at: `http://localhost:8000`
 
-**Note:** If you encounter any issues, see [TROUBLESHOOTING.md](TROUBLESHOOTING.md)
-
 ### Frontend Setup
 ```bash
 cd frontend
