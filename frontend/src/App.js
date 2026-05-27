@@ -156,15 +156,42 @@ const theme = createTheme({
       },
     },
     MuiDataGrid: {
+      defaultProps: {
+        rowHeight: 56,
+        columnHeaderHeight: 56,
+      },
       styleOverrides: {
         root: {
           border: 'none',
           '& .MuiDataGrid-cell': {
             borderColor: 'rgba(255, 255, 255, 0.04)',
+            paddingLeft: '20px',
+            paddingRight: '20px',
+          },
+          '& .MuiDataGrid-columnHeader': {
+            paddingLeft: '20px',
+            paddingRight: '20px',
+            '&:focus': {
+              outline: 'none',
+            },
+            '&:focus-within': {
+              outline: 'none',
+            },
           },
           '& .MuiDataGrid-columnHeaders': {
-            backgroundColor: 'rgba(255, 255, 255, 0.03)',
+            backgroundColor: 'rgba(255, 255, 255, 0.02)',
             borderColor: 'rgba(255, 255, 255, 0.06)',
+            borderBottom: '1px solid rgba(255, 255, 255, 0.06)',
+          },
+          '& .MuiDataGrid-columnHeaderTitle': {
+            fontWeight: 700,
+            fontSize: '0.7rem',
+            textTransform: 'uppercase',
+            letterSpacing: '0.05em',
+            color: '#94a3b8',
+          },
+          '& .MuiDataGrid-columnSeparator': {
+            display: 'none',
           },
           '& .MuiDataGrid-row:hover': {
             backgroundColor: 'rgba(16, 185, 129, 0.04)',
