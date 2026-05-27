@@ -169,23 +169,6 @@ Sample files are provided in `backend/sample_data/`:
 - SQL injection prevention (Django ORM)
 - Input validation and sanitization
 
-## 🚀 Deployment
-
-### Quick Deploy to Render + Vercel
-
-1. **Backend (Render)**:
-   - Connect GitHub repository
-   - Add PostgreSQL database
-   - Set environment variables (`SECRET_KEY`, `ALLOWED_HOSTS`, `CORS_ALLOWED_ORIGINS`, `DATABASE_URL`)
-   - Set Python version environment variable `PYTHON_VERSION` to `3.11.9`
-   - Set Build Command: `pip install -r requirements.txt && python manage.py migrate && python manage.py setup_demo_data && python manage.py collectstatic --noinput`
-   - Set Start Command: `gunicorn breathe_esg.wsgi:application`
-
-2. **Frontend (Vercel)**:
-   - Connect GitHub repository
-   - Set `REACT_APP_API_URL` to your Render API URL (e.g. `https://your-backend.onrender.com/api`)
-   - Deploy
-
 ## 🧪 Testing
 
 ### Backend
