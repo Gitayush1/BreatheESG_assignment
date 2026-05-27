@@ -8,7 +8,8 @@ BreatheESG is a comprehensive platform for managing greenhouse gas emissions dat
 
 ## 🚀 Live Deployment
 
-**URL**: [To be added after deployment]
+- **Frontend Application**: [https://breathe-esg-assignment-sable.vercel.app/](https://breathe-esg-assignment-sable.vercel.app/)
+- **Backend API**: [https://breatheesg-assignment-ve23.onrender.com/api/](https://breatheesg-assignment-ve23.onrender.com/api/)
 
 ## 🔐 Login Credentials
 
@@ -29,19 +30,13 @@ breathe-esg/
 │   │   └── management/        # Management commands
 │   ├── sample_data/           # Sample CSV files
 │   └── requirements.txt       # Python dependencies
-├── frontend/                   # React application
-│   ├── src/
-│   │   ├── components/        # React components
-│   │   ├── pages/             # Page components
-│   │   ├── services/          # API services
-│   │   └── context/           # React context
-│   └── package.json           # Node dependencies
-├── MODEL.md                    # Data model documentation
-├── DECISIONS.md                # Design decisions and rationale
-├── TRADEOFFS.md                # Deliberate omissions
-├── SOURCES.md                  # Source format research
-├── SETUP.md                    # Detailed setup guide
-└── DEPLOYMENT.md               # Deployment instructions
+└── frontend/                   # React application
+    ├── src/
+    │   ├── components/        # React components
+    │   ├── pages/             # Page components
+    │   ├── services/          # API services
+    │   └── context/           # React context
+    └── package.json           # Node dependencies
 ```
 
 ## ⚡ Quick Start
@@ -143,17 +138,8 @@ Frontend will run at: `http://localhost:3000`
 
 ### Deployment
 - **Backend**: Render (with PostgreSQL)
-- **Frontend**: Vercel or Netlify
+- **Frontend**: Vercel
 - **CI/CD**: GitHub Actions (optional)
-
-## 📖 Documentation
-
-- **[SETUP.md](SETUP.md)**: Detailed setup instructions
-- **[DEPLOYMENT.md](DEPLOYMENT.md)**: Production deployment guide
-- **[MODEL.md](MODEL.md)**: Data model and database schema
-- **[DECISIONS.md](DECISIONS.md)**: Architecture and design decisions
-- **[TRADEOFFS.md](TRADEOFFS.md)**: What's included and what's not
-- **[SOURCES.md](SOURCES.md)**: Data source formats and requirements
 
 ## 🎯 Use Cases
 
@@ -192,15 +178,15 @@ Sample files are provided in `backend/sample_data/`:
 1. **Backend (Render)**:
    - Connect GitHub repository
    - Add PostgreSQL database
-   - Set environment variables
-   - Deploy
+   - Set environment variables (`SECRET_KEY`, `ALLOWED_HOSTS`, `CORS_ALLOWED_ORIGINS`, `DATABASE_URL`)
+   - Set Python version environment variable `PYTHON_VERSION` to `3.11.9`
+   - Set Build Command: `pip install -r requirements.txt && python manage.py migrate && python manage.py setup_demo_data && python manage.py collectstatic --noinput`
+   - Set Start Command: `gunicorn breathe_esg.wsgi:application`
 
 2. **Frontend (Vercel)**:
    - Connect GitHub repository
-   - Set `REACT_APP_API_URL`
+   - Set `REACT_APP_API_URL` to your Render API URL (e.g. `https://your-backend.onrender.com/api`)
    - Deploy
-
-See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions.
 
 ## 🧪 Testing
 
@@ -228,8 +214,6 @@ npm test
 - [ ] API rate limiting
 - [ ] Comprehensive test coverage
 
-See [TRADEOFFS.md](TRADEOFFS.md) for complete list.
-
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -243,10 +227,7 @@ This project is provided as-is for demonstration purposes.
 
 ## 🆘 Support
 
-For issues and questions:
-- Check [SETUP.md](SETUP.md) for setup help
-- Review [DEPLOYMENT.md](DEPLOYMENT.md) for deployment issues
-- Open an issue on GitHub
+For issues and questions, please open an issue on GitHub.
 
 ## 👥 Authors
 
