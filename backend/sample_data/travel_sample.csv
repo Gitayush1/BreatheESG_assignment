@@ -1,0 +1,11 @@
+Travel_Date,Travel_Type,Distance,Unit,Origin,Destination,Employee_ID
+2026-01-10,Air Travel,5000,km,New York,London,EMP-001
+2026-01-15,Car Travel,150,km,Office,Client Site,EMP-002
+2026-02-05,Air Travel,8000,km,San Francisco,Tokyo,EMP-003
+2026-02-12,Car Travel,200,km,Office,Conference,EMP-004
+2026-02-20,Air Travel,3000,km,Boston,Miami,EMP-001
+2026-03-01,Car Travel,180,km,Office,Client Site,EMP-002
+2026-03-10,Air Travel,6000,km,Chicago,Paris,EMP-005
+2026-03-15,Car Travel,120,km,Office,Training Center,EMP-006
+2026-04-01,Air Travel,4500,km,Seattle,New York,EMP-003
+2026-04-10,Car Travel,160,km,Office,Client Site,EMP-004

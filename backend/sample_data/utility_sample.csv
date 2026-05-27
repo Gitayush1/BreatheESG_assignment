@@ -1,0 +1,10 @@
+Invoice_Date,Utility_Type,Usage,Unit,Meter_ID,Location
+2026-01-31,Electricity,12000,kWh,MTR-001,Building A
+2026-01-31,Natural Gas,400,m3,MTR-002,Building A
+2026-02-28,Electricity,13500,kWh,MTR-001,Building A
+2026-02-28,Natural Gas,450,m3,MTR-002,Building A
+2026-03-31,Electricity,11800,kWh,MTR-001,Building A
+2026-03-31,Natural Gas,420,m3,MTR-002,Building A
+2026-01-31,Electricity,8000,kWh,MTR-003,Building B
+2026-02-28,Electricity,8500,kWh,MTR-003,Building B
+2026-03-31,Electricity,7900,kWh,MTR-003,Building B

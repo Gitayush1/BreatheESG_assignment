@@ -1,0 +1,11 @@
+Date,Material,Quantity,Unit,Plant,Cost_Center
+2026-01-15,Electricity Grid Power,15000,kWh,Plant-001,CC-100
+2026-01-15,Natural Gas,500,m3,Plant-001,CC-100
+2026-01-20,Diesel Fuel,200,liters,Plant-002,CC-200
+2026-02-01,Electricity Grid Power,18000,kWh,Plant-001,CC-100
+2026-02-10,Gasoline,150,liters,Plant-003,CC-300
+2026-02-15,Natural Gas,600,m3,Plant-001,CC-100
+2026-03-01,Electricity Grid Power,16500,kWh,Plant-002,CC-200
+2026-03-05,Diesel Fuel,250,liters,Plant-002,CC-200
+2026-03-20,Natural Gas,550,m3,Plant-001,CC-100
+2026-04-01,Electricity Grid Power,17000,kWh,Plant-001,CC-100
