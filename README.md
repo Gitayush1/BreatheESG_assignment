@@ -9,7 +9,7 @@ BreatheESG is a comprehensive platform for managing greenhouse gas emissions dat
 ## 🚀 Live Deployment
 
 - **Frontend Application**: [https://breathe-esg-assignment-sable.vercel.app/](https://breathe-esg-assignment-sable.vercel.app/)
-- **Backend API**: [https://breatheesg-assignment-ve23.onrender.com/api/](https://breatheesg-assignment-ve23.onrender.com/api/)
+- **Backend API**: [https://breatheesg-assignment-ve23.onrender.com](https://breatheesg-assignment-ve23.onrender.com)
 
 ## 🔐 Login Credentials
 
